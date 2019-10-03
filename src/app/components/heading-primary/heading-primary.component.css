@@ -1,0 +1,26 @@
+/* rgba(126, 213, 111, 0.8),
+rgba(40, 180, 131, 0.8)), */
+
+.heading-primary{
+    color: #ffffff;
+    text-transform: uppercase; 
+
+}
+
+.heading-primary-main{
+    /*it is a span element. we want it to occupy all the line in order it
+    to go line under so we will define a block display */
+    display: block;
+    font-size: 40px;
+    font-weight: 400;
+    letter-spacing: 27px;
+
+}
+
+.heading-primary-sub{
+    display: block;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 12.4px;
+
+}

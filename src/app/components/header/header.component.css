@@ -1,0 +1,66 @@
+/*
+COLORS:
+
+Light green: #7ed56f
+Medium green: #55c57a
+Dark green: #28b485
+
+*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box; /* means: border height and border width 
+    are no longer added to the total height */
+}
+
+body {   /* everything on fonts should be in body selector */
+    font-family: "lato", sans-serif;    /*lato font and it's weight we included on the html code it's 
+    an external google font */
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.7; /*means 1.7 x of the predefined line height */
+    color:#777;
+    padding: 30px;
+}
+
+header {
+    height: 95vh; /*the height of the element will be 95% of the viewport height */
+    /* background with gradient green colored with opacity 80%*/
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(126, 213, 111, 0.8),
+        rgba(40, 180, 131, 0.8)),
+        url(../../../assets/img/hero.jpg);
+    background-size: cover; /* viewport or element width will try to fit the element
+    inside the box*/
+    background-position: top; /* no matter how we will nerrow the screen the background
+    will stay on at the top */
+    /* clip path used to cut the element and shape it as we want.
+    more shapes available at "clippy" webpage.*/
+     clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+     /*header position set to reletive because the logo element inside it is absolute
+     position and needs a starting point*/
+     position: relative;
+
+
+}
+
+.logo-box{
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    
+}
+
+.text-box{
+    /*centering text procedure:*/
+    position: absolute;
+    /*move the text from the top to 50% of the page+ 50% right
+    40% height instead of 50% because in this project the bottom is cropped
+    */
+    top:40%;
+    left:50%;
+    /*now get text back 50% back of the text position in order to center it*/
+    transform: translate(-50%,-50%);  
+}
