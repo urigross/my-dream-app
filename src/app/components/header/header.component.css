@@ -18,10 +18,9 @@ body {   /* everything on fonts should be in body selector */
     font-family: "lato", sans-serif;    /*lato font and it's weight we included on the html code it's 
     an external google font */
     font-weight: 400;
-    font-size: 16px;
+    font-size: 1.6rem;
     line-height: 1.7; /*means 1.7 x of the predefined line height */
-    color:#777;
-    padding: 30px;
+    padding: 3rem;
 }
 
 header {
@@ -48,9 +47,8 @@ header {
 
 .logo-box{
     position: absolute;
-    top: 40px;
-    left: 40px;
-    
+    top: 4rem;
+    left: 4rem;
 }
 
 .text-box{
@@ -62,5 +60,18 @@ header {
     top:40%;
     left:50%;
     /*now get text back 50% back of the text position in order to center it*/
-    transform: translate(-50%,-50%);  
+    transform: translate(-50%,-50%);
+    margin-bottom: 6rem;
+    text-align: center;
 }
+
+.btn-box{
+    /*positioning the button under the headings and centering it*/
+    
+    /*make button height smaller*/
+    line-height: 40%;
+}
+
+
+
+

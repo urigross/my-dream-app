@@ -2,25 +2,72 @@
 rgba(40, 180, 131, 0.8)), */
 
 .heading-primary{
-    color: #ffffff;
     text-transform: uppercase; 
-
+    backface-visibility: hidden; /* prevents the animation bug to go up a bit after finish*/
+    margin-bottom: 6rem;
 }
 
+.heading-primary-main, .heading-primary-sub{
+    background: linear-gradient(
+        to right bottom,
+        rgba(48, 5, 238, 0.8),
+        rgba(231, 9, 165, 0.8));
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+
+}
 .heading-primary-main{
     /*it is a span element. we want it to occupy all the line in order it
     to go line under so we will define a block display */
-    display: block;
-    font-size: 40px;
-    font-weight: 400;
-    letter-spacing: 27px;
-
+        display: block;
+        font-size: 5rem;
+        font-weight: 400;
+        letter-spacing: 2.7rem;
+        animation-name: moveInLeft;  /* calls the animation we defined below */
+        animation-duration: 3s;
+        
+        /* animation-delay: 3s; 
+        animation-timing-function: ease-in;  - it will start slower
+        animation-iteration-count: 3;  how many times animation will play  */
+        
+    }
+    
+    .heading-primary-sub{
+        padding-left: 1.8em;
+        display: block;
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 1.24rem;
+    animation: moveInRight 3s ease-out;    
+    
+}
+/* we definve animation here: opacity means it will appear from nothing. transtorm
+translatex means it will move on x axis. */
+@keyframes moveInLeft{
+    0%{ /*0% means the starting point of the animation*/
+        opacity: 0;
+        transform: translateX(-10rem);
+        /* transform: rotate(180deg); - it rotates the text */
+    }
+    50%{ /* moves too much to the right */
+        transform: translateX(2rem);
+    }  /*then goes back left to the center*/
+    100%{   /* 100% means the end of the animation*/
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
 
-.heading-primary-sub{
-    display: block;
-    font-size: 15px;
-    font-weight: 700;
-    letter-spacing: 12.4px;
-
+@keyframes moveInRight{
+    0%{ /*0% means the starting point of the animation*/
+        opacity: 0;
+        transform: translateX(10rem);
+    }
+    50%{ /* moves too much to the right */
+        transform: translateX(-2rem);
+    }  /*then goes back left to the center*/
+    100%{   /* 100% means the end of the animation*/
+        opacity: 1;
+        transform: translateX(0);
+    }
 }

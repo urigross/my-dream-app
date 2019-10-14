@@ -1,1 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
+
+/*Initilizing the font-size. All the project responsive (REM) font sizes will
+relay thifont size*/
+html{
+    font-size: 10px;
+}
