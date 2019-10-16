@@ -5,6 +5,8 @@ import { HeaderComponent } from '../components/header/header.component';
 import { LogoComponent } from '../components/logo/logo.component';
 import { HeadingPrimaryComponent } from '../components/heading-primary/heading-primary.component';
 import { ButtonComponent } from '../components/button/button.component';
+import { HeadingPrimarySubComponent } from '../components/heading-primary-sub/heading-primary-sub.component';
+import { HeadingPrimaryMainComponent } from '../components/heading-primary-main/heading-primary-main.component';
 
 @NgModule({
   declarations: [
@@ -12,7 +14,9 @@ import { ButtonComponent } from '../components/button/button.component';
     HeaderComponent,
     LogoComponent,
     HeadingPrimaryComponent,
-    ButtonComponent
+    ButtonComponent,
+    HeadingPrimarySubComponent,
+    HeadingPrimaryMainComponent
   ],
   imports: [
     BrowserModule
