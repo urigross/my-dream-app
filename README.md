@@ -26,3 +26,7 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 "# my-dream-app" 
+
+## What's the project about
+
+This project is educational self learning for learning angular with css only. This project is a single page of "natourus" agency
